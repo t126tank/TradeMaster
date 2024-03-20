@@ -31,3 +31,4 @@ openfe
 fastdtw
 chardet
 pyarrow
+yapf==0.40.1

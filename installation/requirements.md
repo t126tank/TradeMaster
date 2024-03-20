@@ -59,6 +59,7 @@ Install Apex following [apex repo](https://github.com/NVIDIA/apex):
   git clone https://github.com/TradeMaster-NTU/TradeMaster.git
   cd TradeMaster
 
+  ** Downgrade both wheel and setuptools with pip install wheel==0.38.4 setuptools==66.0.0
   ** pip install setuptools==65.5.0 pip==21
   ** pip install wheel==0.38.0
 
