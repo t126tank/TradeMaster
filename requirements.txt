@@ -8,7 +8,7 @@ psutil
 scipy
 spacy
 sqlalchemy
-pandas
+pandas==1.5
 iopath
 yfinance
 matplotlib

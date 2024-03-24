@@ -16,7 +16,7 @@ from trademaster.preprocessor.builder import build_preprocessor
 def parse_args():
     parser = argparse.ArgumentParser(description='Download Alpaca Datasets')
     parser.add_argument("--config",
-                        default=osp.join(ROOT, "configs", "data_preprocessor", "yahoofinance", "bp500.py"),
+                        default=osp.join(ROOT, "configs", "data_preprocessor", "yahoofinance", "sp500.py"),
                         help="download datasets config file path")
     args = parser.parse_args()
     return args
