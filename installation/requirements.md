@@ -71,3 +71,18 @@ Install Apex following [apex repo](https://github.com/NVIDIA/apex):
   ```
   python tools/algorithmic_trading/train.py
   ```
+
+## Jupyter-notebook
+[remote access](https://sishida21.github.io/2019/12/12/remote-jupyter-notebook/)
+```
+jupyter notebook --ip=* --no-browser
+
+.jupyter/jupyter_notebook_config.py
+
+c.NotebookApp.ip = '0.0.0.0'
+c.NotebookApp.port = 8888
+c.NotebookApp.allow_origin = '*' #allow all origins
+c.NotebookApp.allow_credentials = False
+c.NotebookApp.open_browser = False
+c.NotebookApp.password_required = False
+```
