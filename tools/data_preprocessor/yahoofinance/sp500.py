@@ -29,7 +29,7 @@ def main():
     cfg = replace_cfg_vals(cfg)
 
     preprocessor = build_preprocessor(cfg)
-
+    # preprocessor.run()
     preprocessor.run(os.path.join(ROOT, "data/portfolio_management/sp500/data.csv"))
 
 if __name__ == '__main__':

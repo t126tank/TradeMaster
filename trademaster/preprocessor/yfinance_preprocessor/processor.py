@@ -547,6 +547,7 @@ class YfinancePreprocessor(CustomPreprocessor):
         else:
           self.df = pd.read_csv(custom_data_path)
         self.df = self.download_data()
+        # self.df.to_csv('debug.csv', index=False)
         self.df = self.df.rename(columns={
             "Open":"open",
             "High":"high",
@@ -568,7 +569,7 @@ class YfinancePreprocessor(CustomPreprocessor):
           self.df = self.make_alpha158()
 
         train, valid, test=self.split(self.df, self.train_valid_test_portion)
-        
+
         #Modify column names as needed.
         train = train.rename(columns={"ticker": "tic"})
         valid = valid.rename(columns={"ticker": "tic"})
